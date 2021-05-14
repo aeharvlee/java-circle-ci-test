@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-14T05:40:59" hostname="DenverLeeui-MacBookPro.local" time="0.019">
+  <properties/>
+  <testcase name="Simple add should work" classname="CalculatorTest" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
