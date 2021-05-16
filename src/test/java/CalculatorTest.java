@@ -19,4 +19,10 @@ public class CalculatorTest {
     public void testAdd() {
         assertEquals(20, calculator.add(10, 10), "Regular add should work");
     }
+
+    @Test
+    @DisplayName("Simple add should work")
+    public void testAdd2() {
+        assertEquals(30, calculator.add(20, 10), "Regular add should work");
+    }
 }
