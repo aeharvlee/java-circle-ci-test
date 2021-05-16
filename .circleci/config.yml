@@ -10,6 +10,7 @@ jobs:
       - checkout
       - android/start-emulator-and-run-tests:
           system-image: system-images;android-29;default;x86
+          test-command: ./gradlew test
 workflows:
   test:
     jobs:
