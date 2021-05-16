@@ -8,9 +8,18 @@ jobs:
       resource-class: large
     steps:
       - checkout
-      - android/start-emulator-and-run-tests:
+      - android/create-avd:
+          avd-name: myavd
+          install: true
           system-image: system-images;android-29;default;x86
+      - android/start-emulator:
+          avd-name: myavd
+          no-window: true
+          restore-gradle-cache-prefix: v1a
+      - android/run-tests
           test-command: ./gradlew test
+      - android/save-gradle-cache:
+          cache-prefix: v1a
 workflows:
   test:
     jobs:
