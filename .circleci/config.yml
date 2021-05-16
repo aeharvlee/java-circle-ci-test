@@ -17,6 +17,7 @@ jobs:
           no-window: true
           restore-gradle-cache-prefix: v1a
           post-emulator-launch-assemble-command: ""
+      - android/disable-animations
       - android/run-tests:
           test-command: ./gradlew test
       - android/save-gradle-cache:
