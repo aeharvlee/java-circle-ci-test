@@ -29,6 +29,6 @@ public class CalculatorTest {
     @Test
     @DisplayName("Simple add should work")
     public void testAdd3() {
-        assertEquals(30, calculator.add(30, 10), "Regular add should work");
+        assertEquals(40, calculator.add(30, 10), "Regular add should work");
     }
 }
